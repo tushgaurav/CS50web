@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+:root {
+  --primary-color: #00a8e8;
+  --primary-dark: #007ea7;
+  --accent-color: #003459;
+  --accent-dark: #00171f;
+  --primary-text-color: #fff;
+}
+
+* {
+  margin: 0;
+  font-family: Lato;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background-color: var(--primary-color);
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: 0.8em;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+header {
+  height: 8vh;
+}
+
+.header-nav {
+  height: 100%;
+  font-size: 1.2em;
+  color: var(--primary-text-color);
+  background: var(--accent-dark);
+  justify-content: flex-end;
+}
+
+.header-nav > li:nth-of-type(3) {
+  margin-right: 2rem;
+}
+
+main {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.main-logo img {
+  width: 40%;
+}
+
+form {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+main input[type="text"] {
+  padding: 1.1em;
+  margin: 2em;
+  border-radius: 50em;
+  border: 2px solid var(--accent-dark);
+  font-size: 17px;
+  width: 40%;
+}
+
+button {
+  background-color: var(--accent-dark);
+  border-radius: 5em;
+  display: inline-block;
+  cursor: pointer;
+  color: var(--primary-text-color);
+  font-family: Lato;
+  font-size: 1.1em;
+  padding: 1rem 1.8rem;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+  margin: 1em;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}
+
+.quote {
+  font-size: 1.1em;
+  color: var(--accent-dark);
+}
+
+footer {
+  font-size: 1.1em;
+  height: 12vh;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  background-color: var(--accent-dark);
+}
+
+.column {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.column li,
+.column ul {
+  display: inline;
+}
+
+.column ul:nth-of-type(1) {
+  margin-right: auto;
+}
+
+.column li {
+  padding: 0.5em;
+}
