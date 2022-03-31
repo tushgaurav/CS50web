@@ -14,8 +14,6 @@
 }
 
 body {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
   background-color: var(--primary-color);
 }
 
@@ -57,16 +55,20 @@ main {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  justify-content: space-around;
-}
-
-.main-logo {
-  display: flex;
   justify-content: center;
 }
 
+.main-logo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em;
+}
+
 .main-logo img {
-  width: 40%;
+  width: 100%;
+  height: auto;
 }
 
 form {
@@ -83,7 +85,15 @@ main input[type="text"] {
   border-radius: 50em;
   border: 2px solid var(--accent-dark);
   font-size: 17px;
-  width: 40%;
+  width: 70%;
+}
+
+.btn-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 button {
@@ -110,8 +120,9 @@ button:active {
 }
 
 .quote {
-  font-size: 1.1em;
+  font-size: 1.3em;
   color: var(--accent-dark);
+  margin: 2em;
 }
 
 footer {
@@ -119,6 +130,7 @@ footer {
   height: 12vh;
   display: flex;
   flex-flow: column wrap;
+  align-items: flex-start;
   width: 100%;
   background-color: var(--accent-dark);
 }
@@ -130,8 +142,16 @@ footer {
   justify-content: space-between;
 }
 
-.column li,
-.column ul {
+.footer-text {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  color: var(--primary-text-color);
+  padding: 0.5em;
+  margin-left: 1em;
+}
+
+.column li {
   display: inline;
 }
 
@@ -141,4 +161,10 @@ footer {
 
 .column li {
   padding: 0.5em;
+}
+
+@media (max-width: 650px) {
+  .main-logo {
+    width: 90%;
+  }
 }
