@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <title>Google Advanced Search | CS50 Edition</title>
+  </head>
+  <body>
+
+<!-- Nav bar -->
+  <header>
+  <ul class="header-nav">
+    <li><a href="/index.html" class="nav-link">Search</a></li>
+    <li><a href="/image_search.html" class="nav-link">Images</a></li>
+    <li><a href="/advanced search.html" class="nav-link">Advanced</a></li>
+  </ul>
+</header>
+
+
+<main>
+  <h2>Advanced Google Search</h2>
+  <form action="https://www.google.co.in/search" method="GET" name="f">
+    <div class="advanced-search">
+    <label for="all-words">all these words:</label>
+    <input type="text" name="as_q" id="all-words" placeholder="Enter a word" />
+    <label for="exact-words">this exact word or phase:</label>
+    <input type="text" name="as_epq" id="exact-words">
+    <label for="any-words">any of these words:</label>
+    <input type="text" name="as_oq" id="any-words">
+    <label for="none-words">none of these words:</label>
+    <input type="text" name="as_eq" id="none-words">
+    </div> 
+    <button class="" type="submit">Search</button>
+  </form>
+</main>
+
+
+<footer>
+  <div class="footer-text">This is Project 0.</div>
+</footer>
+</header>
+
+  </body>
+</html>
