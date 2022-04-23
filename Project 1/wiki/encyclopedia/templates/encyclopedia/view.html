@@ -1,7 +1,7 @@
 {% extends 'encyclopedia/layout.html' %} {% block title %} {{ title }} - CS50
-wiki {% endblock %} {% block body %}
-<h1>{{ title }}</h1>
-
-<p>{{ content }}</p>
-
+wiki {% endblock %} {% block body %} {{ content | safe }}
+<form action="/edit/">
+  <input type="hidden" name="title" value="{{ title }}" />
+  <button type="submit">Edit this entry</button>
+</form>
 {% endblock %}
